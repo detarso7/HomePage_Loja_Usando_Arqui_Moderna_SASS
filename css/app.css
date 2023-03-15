@@ -37,6 +37,7 @@ ul {
 .header-top {
   background-color: #1E1F29;
   color: #fff;
+  display: none;
 }
 .header-top-container {
   max-width: 1170px;
@@ -62,6 +63,12 @@ ul {
   justify-content: space-between;
   padding: 1.3rem;
 }
+@media (max-width: 425px) {
+  .main-header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .main-header-container a, .main-header-container span, .main-header-container i {
   color: #fff;
 }
@@ -78,6 +85,12 @@ ul {
   align-items: center;
   justify-content: center;
   width: 45%;
+}
+@media (max-width: 425px) {
+  .main-header-container #search-form {
+    width: 100%;
+    margin: 2rem 0;
+  }
 }
 .main-header-container #search-form input {
   height: 40px;
@@ -118,6 +131,11 @@ ul {
 .main-header-container .header-actions-menu .wishlist-container a:hover, .main-header-container .header-actions-menu .header-cart-container a:hover {
   color: #d10024;
 }
+@media (max-width: 425px) {
+  .main-header-container .header-actions-menu .wishlist-container, .main-header-container .header-actions-menu .header-cart-container {
+    margin: 1rem;
+  }
+}
 
 .header-bottom {
   background-color: #fff;
@@ -130,6 +148,11 @@ ul {
   display: flex;
   justify-content: space-between;
   justify-content: left;
+}
+@media (max-width: 425px) {
+  .header-bottom ul {
+    display: none;
+  }
 }
 .header-bottom ul li {
   padding: 15px 0;
