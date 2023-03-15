@@ -169,6 +169,56 @@ ul {
   padding: 2rem 0;
 }
 
+.deal-container {
+  background-image: url("../../img/deal_headset.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 2rem;
+  background-color: #b9babc;
+  background-size: 25%;
+  height: 400px;
+  padding: 2rem;
+}
+.deal-container-content {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.deal-container-content-timer {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.deal-container-content .deal-content-time {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d10024;
+  color: #fff;
+  margin: 0 1rem;
+}
+.deal-container-content .deal-content-time-time {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.deal-container-content-title, .deal-container-content-subtitle {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.deal-container-content-subtitle {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
 .btn {
   height: 40px;
   padding: 8px 15px;

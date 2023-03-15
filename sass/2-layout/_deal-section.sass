@@ -1,0 +1,49 @@
+@use '../1-base/_variables'
+@use '../1-base/_base-mixin'
+@use 'layout-mixin'
+
+.deal-container
+    background-image: url('../../img/deal_headset.png')
+    background-repeat: no-repeat
+    background-position-x: 95%
+    background-position-y: 2rem
+    background-color: variables.$gray-text-color
+    background-size: 25%
+    height: 400px
+    padding: 2rem
+
+    &-content
+        @include layout-mixin.center-contet 
+        height: 100%
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        &-timer
+            display: flex
+            margin-bottom: 2rem
+        
+        .deal-content-time
+            height: 100px
+            width: 100px
+            border-radius: 50%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            background-color: variables.$primary-color
+            color: variables.$light-color
+            margin: 0 1rem
+
+            &-time 
+                font-weight: bold
+                font-size: 1.5rem
+
+        &-title, &-subtitle
+            margin-bottom: 1rem
+            text-transform: uppercase
+            font-size: 2rem
+
+        &-subtitle
+            margin-bottom: 2rem
+            font-size: 1.5rem
