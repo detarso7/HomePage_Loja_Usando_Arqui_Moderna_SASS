@@ -11,6 +11,11 @@
     align-items: center
     justify-content: center
     transition: .4s
+
+    @include base-mixin.mobile
+        width: 90%
+        margin: 1rem
+
     &:hover 
         border-color: variables.$primary-color
 

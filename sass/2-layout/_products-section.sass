@@ -8,8 +8,13 @@
     h2
         font-size: 2rem
         text-transform: uppercase
+        @include base-mixin.mobile
+            text-align: center
 
     &-container
         display: flex
         justify-content: space-between
         padding: 2rem 0
+        @include base-mixin.mobile
+            flex-direction: column
+            align-items: center

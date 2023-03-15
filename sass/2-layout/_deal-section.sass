@@ -11,6 +11,12 @@
     background-size: 25%
     height: 400px
     padding: 2rem
+    @include base-mixin.mobile
+        background-size: 70%
+        background-position-x: 120%
+        background-position-y: 125%
+        height: 700px
+        
 
     &-content
         @include layout-mixin.center-contet 
@@ -18,10 +24,17 @@
         flex-direction: column
         align-items: center
         justify-content: center
+        @include base-mixin.mobile
+            text-align: center
+            
 
         &-timer
             display: flex
             margin-bottom: 2rem
+            @include base-mixin.mobile
+                flex-wrap: wrap
+                align-self: center
+                justify-content: center
         
         .deal-content-time
             height: 100px
@@ -34,6 +47,8 @@
             background-color: variables.$primary-color
             color: variables.$light-color
             margin: 0 1rem
+            @include base-mixin.mobile
+                margin-bottom: 1.5rem
 
             &-time 
                 font-weight: bold
