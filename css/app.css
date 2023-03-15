@@ -219,6 +219,47 @@ ul {
   font-size: 1.5rem;
 }
 
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-top: 1px solid #e4e7ed;
+}
+.newsletter-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+.newsletter-container h2 span {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.newsletter-container form {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.newsletter-container form input[type=email] {
+  border: 1px solid #e4e7ed;
+  height: 40px;
+  padding-left: 25px;
+  border-radius: 25px 0 0 25px;
+}
+.newsletter-container .social-media i {
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid #e4e7ed;
+  color: #333;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.newsletter-container .social-media i:hover {
+  background-color: #d10024;
+  color: #fff;
+}
+
 .btn {
   height: 40px;
   padding: 8px 15px;

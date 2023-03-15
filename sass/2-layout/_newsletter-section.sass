@@ -1,0 +1,43 @@
+@use '../1-base/_variables'
+@use '../1-base/_base-mixin'
+@use 'layout-mixin'
+
+.newsletter-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 3rem
+    border-top: 1px solid variables.$section-bg-color
+
+    h2
+        font-size: 2rem
+        color: variables.$dark-color
+        margin-bottom: 2rem
+
+        span
+            font-size: 2rem
+            font-weight: bold
+            text-transform: uppercase
+
+    form
+        display: flex
+        margin-bottom: 3rem
+
+        input[type="email"]
+            border: 1px solid variables.$section-bg-color
+            @include layout-mixin.rounded-input
+
+    .social-media
+
+        i
+            padding: 12px
+            margin: 5px
+            border: 1px solid variables.$section-bg-color
+            color: variables.$dark-color
+            cursor: pointer
+            transition: .4s
+
+            &:hover
+                background-color: variables.$primary-color
+                color: variables.$light-color
